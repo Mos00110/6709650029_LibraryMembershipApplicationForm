@@ -8,20 +8,20 @@
 </head>
 <body>
     <div class="form-container">
-        <h2>Library Membership Application</h2>
-        <form action="#" method="POST">
+        <h2>Library Membership</h2>
+        <form>
             <div class="form-name">
                 <label for="name">ชื่อ<span style="color: red">*</span></label>
                 <input type="text" id="name" name="name" placeholder="ชื่อ" required>
                 <input type="text" id="name" name="name" placeholder="นามสกุล" required>
             </div>
             <div class="form-name">
-                <label for="name">Name<span style="color: red">*</label>
+                <label for="name">Name<span style="color: red">*</span></label>
                 <input type="text" id="name" name="name" placeholder="Name" required>
                 <input type="text" id="name" name="name" placeholder="Lastname" required>
             </div>
             <div class="form-group">
-                <label for="gender">Gender<span style="color: red">*</label>
+                <label for="gender">Gender<span style="color: red">*</span></label>
                 <select id="gender" name="gender" required>
                     <option value="blank">Please Select</option>
                     <option value="male">Male</option>
@@ -31,21 +31,35 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="student-id">Student ID<span style="color: red">*</label>
+                <label for="student-id">Student ID<span style="color: red">*</span></label>
                 <input type="text" id="student-id" name="student-id" required>
             </div>
             <div class="form-group">
-                <label for="faculty">Faculty<span style="color: red">*</label>
+                <label for="faculty">Faculty<span style="color: red">*</span></label>
                 <input type="text" id="faculty" name="faculty" required>
             </div>
             <div class="form-group">
-                <label for="email">Email Address<span style="color: red">*</label>
+                <label for="email">Email Address<span style="color: red">*</span></label>
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
-                <label for="dob">Date of Birth<span style="color: red">*</label>
+                <label for="dob">Date of Birth<span style="color: red">*</span></label>
                 <input type="date" id="dob" name="dob" required>
             </div>
+            <div class="form-group">
+                <label for="book-preference">Preferred Book Genres<span style="color: red">*</span></label>
+                <textarea id="book-preference" name="book-preference" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="newsletter">Would you like to receive library updates by email?<span style="color: red">*</span></label>
+                <div class="select">
+                    <input type="radio" id="yes" name="receive" value="y">
+                        <label for="yes">Yes</label>
+                    <input type="radio" id="No" name="receive" value="n">
+                        <label for="no">No</label>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
     </div>
 </body>
 </html>

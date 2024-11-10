@@ -61,7 +61,7 @@ body {
 .form-group input,
 .form-group select,
 .form-group textarea {
-    width: 100%;
+    width: 95%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -71,4 +71,21 @@ body {
     resize: vertical;
     min-height: 100px;
 }
-
+.select{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #60c263;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.submit-btn:hover {
+    background-color: #45a049;
+}
